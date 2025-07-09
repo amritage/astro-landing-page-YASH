@@ -1,0 +1,79 @@
+---
+
+import trustImg from "../assets/fabric.avif";
+---
+<footer class="bg-primary text-secondary px-4 py-10 text-sm font-medium">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <!-- Links -->
+    <nav aria-label="Footer Navigation">
+      <h3 class="text-xl font-[400] mb-4">Links</h3>
+      <ul class="space-y-2 text-[14px]">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/gallery">Our Gallery</a></li>
+        <li><a href="/blogs">Blogs</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/sitemap">Sitemap</a></li>
+        <li><a href="/market-area">Market Area</a></li>
+      </ul>
+    </nav>
+    <!-- Products -->
+    <nav aria-label="Product Navigation">
+      <h3 class="text-xl font-[400] mb-4">Our Products</h3>
+      <ul class="space-y-2 text-[14px]">
+        <li><a href="/saree">Saree</a></li>
+        <li><a href="/embroidered-sarees">Embroidered Sarees</a></li>
+        <li><a href="/designer-sarees">Designer Sarees</a></li>
+        <li><a href="/fancy-sarees">Fancy Sarees</a></li>
+        <li><a href="/bollywood-sarees">Bollywood Theme Saree</a></li>
+        <li><a href="/pure-fabric">Pure Fabric</a></li>
+        <li><a href="/suits">Suits</a></li>
+      </ul>
+    </nav>
+    <!-- Newsletter (static, no JS) -->
+    <div class="lg:col-span-1">
+      <h3 class="text-xl mb-4">Join Our Newsletter</h3>
+      <div class="space-y-3">
+        <input
+          id="newsletter"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+         
+          class="w-full px-4 py-2 rounded border-none text-black"
+          disabled
+        />
+        <span class="btn w-full text-center block bg-gray-300 cursor-not-allowed" aria-label="Submit newsletter form">Submit</span>
+      </div>
+    </div>
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-xl font-[400] mb-4">You Can Follow Us At</h3>
+      <div class="flex gap-4 text-lg">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile" class="hover:text-blue-600">FB</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" class="hover:text-pink-500">IG</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile" class="hover:text-sky-400">TW</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="hover:text-blue-700">IN</a>
+      </div>
+    </div>
+    <!-- Trust Image -->
+    <div class="mt-8 sm:mt-0">
+      <h3 class="text-xl font-medium mb-4">We Accept</h3>
+      <div class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <img
+          src={trustImg.src}
+          alt="We accept Visa, MasterCard, and more"
+        
+      
+          loading="lazy"
+          class="object-contain w-full h-auto"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="mt-10 pt-6 border-t border-white text-center text-xs text-primary">
+    © Amrita Global Enterprises — Crafted with ❤️ 2025
+  </div>
+</footer>

@@ -1,0 +1,25 @@
+{
+  "name": "blue-bar",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.11.0",
+    "astro-compress": "^2.3.8",
+    "compress": "^0.99.0",
+    "compression": "^1.8.0",
+    "sharp": "^0.34.2",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@astrojs/node": "^9.3.0",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

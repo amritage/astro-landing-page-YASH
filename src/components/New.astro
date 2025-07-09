@@ -1,0 +1,64 @@
+---
+import fabricImage from "../assets/fabric.avif";
+---
+
+<section class="bg-primary" aria-labelledby="premium-products-heading">
+    <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center md:items-start px-4"
+    >
+        {/* Text Section */}
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+            <h2
+                id="premium-products-heading"
+                class="text-xl font-[400] san text-center md:text-left mb-2 text-primary leading-snug"
+            >
+                Get Premium Products Directly from Surat
+            </h2>
+            <hr class="w-16 border-t-2 border-primary mx-auto md:mx-0 mb-4" />
+
+            <p
+                class="mb-4 text-[14px] pop text-secondary leading-relaxed text-left"
+            >
+                Discover high-quality georgette fabric straight from trusted
+                manufacturers in Surat, crafted with precision to meet
+                international standards. Our premium textiles are known for
+                their softness, durability, and luxurious drape — perfect for
+                everything from designer wear to export-grade garments.
+            </p>
+
+            <p class="text-secondary pop text-[14px] leading-relaxed text-left">
+                Whether you're sourcing for retail, wholesale, or custom
+                production, we provide versatile solutions tailored to your
+                needs. Backed by years of expertise and cutting-edge techniques,
+                our georgette fabrics bring elegance and comfort together in
+                every weave.
+            </p>
+            <div
+                class="mt-6 px-6 py-2 btn bg-primary text-primary-dark rounded-md hover:bg-primary-dark transition text-center cursor-pointer w-max mx-auto md:mx-0"
+                aria-label="Request a quote"
+            >
+                Get Quote
+            </div>
+        </div>
+
+        {/* Image Section */}
+        <div class="w-full md:w-1/2 flex flex-col items-center">
+            <figure
+                class="relative w-full max-w-md h-72 md:h-96 rounded-lg overflow-hidden shadow"
+            >
+                <img
+                    src={fabricImage.src}
+                    alt="Premium Surat Georgette Fabric with fine weave and elegant drape"
+                    class="object-cover w-full h-full"
+                    width="400"
+                    height="384"
+                    loading="eager"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1268px) 75vw, 33vw"
+                />
+                <figcaption class="sr-only">
+                    Premium Surat Georgette Fabric
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
