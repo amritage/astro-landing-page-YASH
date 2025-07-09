@@ -1,16 +1,16 @@
 ---
-import {Image} from 'astro:assets';
-import heroImg from '../assets/hero123.avif';
+// import {Image} from 'astro:assets';
+// import heroImg from '../assets/hero123.avif';
 ---
 
 <header class="relative h-72 md:h-96" role="banner">
   <!-- Background Image and Overlay -->
   <div class="absolute inset-0 w-full h-full">
-    <Image
-      src={heroImg}
+    <img
+      src="/hero123.avif"
       alt="White Georgette Fabric - Lightweight and soft for elegant outfits"
-      width={600}
-      height={400}
+      width="600"
+      height="400"
       loading="eager"
       fetchpriority="high"
       class="object-cover w-full h-full"
