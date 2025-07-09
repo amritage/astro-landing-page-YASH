@@ -1,13 +1,13 @@
 ---
-// import { Image } from "@astrojs/image/components";
 import {Image} from 'astro:assets';
+import heroImg from '../assets/hero123.avif';
 ---
 
 <header class="relative h-72 md:h-96" role="banner">
   <!-- Background Image and Overlay -->
   <div class="absolute inset-0 w-full h-full">
     <Image
-      src="/hero123.avif"
+      src={heroImg}
       alt="White Georgette Fabric - Lightweight and soft for elegant outfits"
       width={600}
       height={400}
