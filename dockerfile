@@ -1,20 +1,14 @@
-# Use official Node.js 20 image
-FROM node:20-alpine
-
-# Set working directory
+FROM node:18-alpine AS build
 WORKDIR /app
-
-# Copy package files first for layer caching
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
-
-# Copy the rest of the project files
 COPY . .
-
-# Build the Astro project
 RUN npm run build
+
+# Production stage
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose Astro's default preview port
 EXPOSE 4321
