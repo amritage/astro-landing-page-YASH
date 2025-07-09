@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "astro preview",
+    "start": "npm start",
     "astro": "astro"
   },
   "engines": {
