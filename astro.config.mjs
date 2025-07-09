@@ -12,8 +12,9 @@ export default defineConfig({
       compression({ algorithm: 'brotliCompress' })
     ],
   },
-  output: 'server',
-  adapter: node({ mode: 'standalone' }),
+  // Set output to 'static' for static site deployment (fixes image path issues on global domains)
+  output: 'static',
+  // Remove SSR adapter for static output
   integrations: [
     astroCompress({ brotli: true, gzip: true }) // <-- use the imported function
   ],
