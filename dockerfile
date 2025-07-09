@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build 
 
-EXPOSE 8080
-ENV PORT=8080
+EXPOSE 4321
+ENV PORT=4321
 
 CMD npx astro preview --port $PORT --host 
